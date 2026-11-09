@@ -5,5 +5,6 @@
         "context": ".."
     },
     "workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind",
-    "workspaceFolder": "/workspace"
+    "workspaceFolder": "/workspace",
+    "postAttachCommand": "find /tmp -maxdepth 1 -type s -name 'vscode-ssh-auth-*.sock' -delete"
 }
